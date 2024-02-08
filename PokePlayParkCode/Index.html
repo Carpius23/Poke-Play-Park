@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Poke-Play-Park!</title> <!-- Título actualizado para reflejar el contenido de la página -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500&display=swap">
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="/PokePlayParkCode/estilo.css">
     <link rel="shortcut icon" type="image/png" href="/logoizquierda.png">
 </head>
 <body>
@@ -55,6 +55,9 @@
                           <div class="pokemon-image">
                               <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/448.png" alt="Lucario">
                           </div>
+                          <div class="whos">
+                            <img class="questionMArk" src="/questionMArk.png" alt="who?">
+                          </div>
                           <div class="pokemon-info">
                               <div class="pokemon-name">
                                   <h3 class="pokemon-name">Lucario</h3>
@@ -76,7 +79,8 @@
                     <a href="#">Show silhouette</a>
                   </div>
                   <div class="search-poke">
-                    <input class="searchpoke" type="text" name="nameSearch" placeholder="Pokemon Name">
+                    <input class="searchpoke" type="text" onekeyup="searchPokeFunctoin()" placeholder="Pokemon Name">
+                    <div id="search-poke-result"></div>
                   </div>
               </div>
               <div class="guessgridcontainer">
@@ -109,7 +113,8 @@
                 <button class="game-cell" style="background-image: url(/contra\ reloj.png);"></button>
             </div>
     </section>
-    
     <script src="js/funcionalidades.js"></script>
+    <script src="js/iteraciones.js"></script>
+    
 </body>
 </html>

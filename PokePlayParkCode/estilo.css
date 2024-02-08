@@ -564,6 +564,7 @@ a{
     top: 10.5rem;
     left: 50%; 
     transform: translateX(-50%);
+    opacity: 0;
 }
 
 .pokemon-name{
@@ -571,6 +572,7 @@ a{
     top: 2%;
     left: 50%; 
     transform: translateX(-50%);
+    opacity: 0;
 }
 
 .pokemon-image img{
@@ -579,18 +581,31 @@ a{
     left: 50%; 
     transform: translateX(-50%);
     position: absolute;
+    opacity: 0;
+}
+
+.questionMArk{
+    width: 100%;
+    max-width: 5rem;
+    left: 50%; 
+    transform: translateX(-50%);
+    position: absolute;
+    filter: brightness(0);
+    top: 30%;
 }
 
 .pokemon-types{
     position: absolute;
     left: 17%;
     top: 25%;
+    opacity: 0;
 }
 
 .pokemon-stats{
     position: absolute;
     top: 25%;
     right: 17%;
+    opacity: 0;
 }
 
 .Guess-title{
@@ -615,13 +630,17 @@ a{
 .searchpoke{
     all: unset;
     position: absolute;
-    right: 1vw;
+    right: 0.3vw;
     top: 16em;
     border-radius: 100vmax;
     padding: .25rem .5rem;
     background-color: #E8E8E8;
     font-family: Pixelify+Sans;
     color: #000000;
+}
+
+#search-poke-result{
+    
 }
 
 .guessgridcontainer{
@@ -690,6 +709,10 @@ a{
 .pokemon-image-chosen img{
   max-width: 170%;
   max-height: 170%;
+}
+
+.show{
+    opacity: 1;
 }
 
 .correct-part{
